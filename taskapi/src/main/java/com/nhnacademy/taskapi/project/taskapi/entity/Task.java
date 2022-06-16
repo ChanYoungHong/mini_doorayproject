@@ -21,20 +21,20 @@ import lombok.Setter;
 public class Task {
 
     @Id
-    private final Integer taskNo;
+    private Integer taskNo;
 
     @JoinColumn(name = "project_no")
     @ManyToOne(fetch = FetchType.EAGER)
     private Project project;
 
     @Column
-    private final String taksContent;
+    private String taksContent;
 
     @Column
-    private final String taskStatus;
+    private String taskStatus;
 
     @Column
-    private final String mileStone;
+    private String mileStone;
 
     @JoinColumn(name = "account_no")
     @ManyToOne(fetch = FetchType.EAGER)

@@ -1,4 +1,5 @@
 package com.nhnacademy.taskapi.project.taskapi.entity;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -22,26 +23,23 @@ public class Project {
 
     @Id
     @Column(name = "project_no")
-    private final Integer projectNo;
+    private Integer projectNo;
 
     @Column(name = "project_name")
-    private final String projectName;
+    private String projectName;
 
     @Column(name = "project_admin")
-    private final String projectAdmin;
+    private String projectAdmin;
 
     @Column(name = "project_status")
-    private final String projectStatus;
+    private String projectStatus;
 
     @Column(name = "project_content")
-    private final String projectContent;
+    private String projectContent;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn
-    private final Integer accountNo;
-
-    @OneToMany(fetch = FetchType.LAZY)
-    private Task task;
+    @JoinColumn(name = "account_no")
+    private Account account;
 
 
 }

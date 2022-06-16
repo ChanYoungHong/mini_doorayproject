@@ -21,7 +21,7 @@ import lombok.Setter;
 public class Tag {
 
     @Id
-    private final String tagName;
+    private String tagName;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "task_no")

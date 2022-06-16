@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/accountapi/accountapi.iml" filepath="$PROJECT_DIR$/accountapi/accountapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mini_doorayproject.iml" filepath="$PROJECT_DIR$/mini_doorayproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taskapi/taskapi.iml" filepath="$PROJECT_DIR$/taskapi/taskapi.iml" />
+    </modules>
+  </component>
+</project>

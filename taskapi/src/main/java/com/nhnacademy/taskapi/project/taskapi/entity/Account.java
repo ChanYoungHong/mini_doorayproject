@@ -22,14 +22,17 @@ import lombok.Setter;
 public class Account {
 
     @Id
-    @Column(name = "account_no")
-    @OneToMany(fetch = FetchType.EAGER)
-    private final Integer accountNo;
+    private Integer accountNo;
 
     @Column(name ="account_id")
-    private final String accountId;
+    private String accountId;
+    
+    @Column(name = "account_password")
+    private String accountPwd;
 
     @Column(name = "account_email")
-    private final String accountEmail;
+    private String accountEmail;
+
+
 
 }

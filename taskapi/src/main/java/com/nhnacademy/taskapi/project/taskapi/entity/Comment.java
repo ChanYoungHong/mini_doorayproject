@@ -20,14 +20,14 @@ public class Comment {
 
     @Id
     @Column(name = "comment_no")
-    private final Integer commetnNo;
+    private Integer commetnNo;
 
     @Column
-    private final Integer accountNo;
+    private Integer accountNo;
 
     @Column
-    private final Integer taskNo;
+    private Integer taskNo;
 
     @Column
-    private final String commentCotent;
+    private String commentCotent;
 }
