@@ -3,12 +3,13 @@ package com.nhnacademy.taskapi.project.taskapi.service.Impl;
 import com.nhnacademy.taskapi.project.taskapi.domain.AccountIdDto;
 import com.nhnacademy.taskapi.project.taskapi.entity.Account;
 import com.nhnacademy.taskapi.project.taskapi.service.SignInService;
-import java.net.http.HttpHeaders;
+
 import java.util.Collections;
 import java.util.Optional;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -22,10 +23,10 @@ import org.springframework.web.client.RestTemplate;
 
 @Slf4j
 @Service
+@RequiredArgsConstructor
 public class SignInServiceImpl implements SignInService, UserDetailsService {
 
-    @Autowired
-    RestTemplate restTemplate;
+    private final RestTemplate restTemplate;
 
     @Override
     public UserDetails loadUserByUsername(String id) throws UsernameNotFoundException {
